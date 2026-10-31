@@ -48,6 +48,7 @@ rm -f "$TEMP_RESEARCH"
 cp "$ROOT/style.css" "$OUT/style.css"
 cp "$ROOT/publications.js" "$OUT/publications.js"
 cp "$ROOT/theme.js" "$OUT/theme.js"
+cp "$ROOT/google38e3ebfc27d4fac7.html" "$OUT/google38e3ebfc27d4fac7.html"
 
 if [[ -d "$ROOT/images" ]]; then
     cp -R "$ROOT/images" "$OUT/images"
