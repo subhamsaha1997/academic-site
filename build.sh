@@ -50,7 +50,6 @@ cp "$ROOT/publications.js" "$OUT/publications.js"
 cp "$ROOT/theme.js" "$OUT/theme.js"
 cp "$ROOT/google38e3ebfc27d4fac7.html" "$OUT/google38e3ebfc27d4fac7.html"
 cp "$ROOT/content/photos.html" "$OUT/photos.html"
-cp -R "$ROOT/images" "$OUT/images"
 
 if [[ -d "$ROOT/images" ]]; then
     cp -R "$ROOT/images" "$OUT/images"
