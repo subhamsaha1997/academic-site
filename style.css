@@ -426,3 +426,71 @@ a:hover {
     font-size: 1.3rem;
   }
 }
+.photos-page {
+  width: min(100% - 48px, var(--page-width));
+  margin: 70px auto;
+}
+
+.photos-header {
+  margin-bottom: 2.5rem;
+}
+
+.photos-header h1 {
+  color: var(--heading);
+  font-size: 1.8rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.photos-header p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.back-link {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.photo-grid figure {
+  margin: 0;
+}
+
+.photo-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.photo-grid figcaption {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 650px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .photos-page {
+    width: calc(100% - 32px);
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
