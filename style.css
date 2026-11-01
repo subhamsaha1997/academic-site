@@ -206,6 +206,7 @@ a:hover {
   padding: 0 0 45px;
   margin: 0 0 40px;
   border-bottom: 1px solid var(--rule);
+  scroll-margin-top: 20px;
 }
 
 .content-section:last-child {
@@ -234,6 +235,49 @@ a:hover {
   color: var(--muted);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
+}
+
+/* Other news toggle */
+
+.news-toggle {
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
+  border: 0;
+}
+
+.news-toggle summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--link);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.news-toggle summary::after {
+  content: "+";
+  font-size: 1.2rem;
+}
+
+.news-toggle[open] summary::after {
+  content: "−";
+}
+
+.news-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.news-list {
+  margin-top: 1.2rem;
 }
 
 /* ========================================
@@ -330,16 +374,60 @@ a:hover {
 }
 
 .advisor-quote {
-    margin: 0 0 1.5rem;
-    padding: 0 0 0 1.2rem;
-    border-left: 2px solid var(--quote-mark);
+  margin: 0 0 1.5rem;
+  padding: 0 0 0 1.2rem;
+  border-left: 2px solid var(--quote-mark);
 }
+
 .advisor-quote p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 1rem;
-    line-height: 1.7;
-    font-style: italic;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* Other quotes toggle */
+
+.quotes-toggle {
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
+  border: 0;
+}
+
+.quotes-toggle summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--link);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quotes-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.quotes-toggle summary::after {
+  content: "+";
+  font-size: 1.2rem;
+}
+
+.quotes-toggle[open] summary::after {
+  content: "−";
+}
+
+.quotes-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.quotes-toggle .advisor-quotes {
+  margin-top: 1.2rem;
 }
 
 /* ========================================

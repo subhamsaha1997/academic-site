@@ -39,6 +39,7 @@ replace_content() {
 }
 
 replace_content "<!-- ABOUT CONTENT -->" "$ROOT/content/about.html"
+replace_content "<!-- NEWS CONTENT -->" "$ROOT/content/news.html"
 replace_content "<!-- RESEARCH CONTENT -->" "$TEMP_RESEARCH"
 replace_content "<!-- QUOTES CONTENT -->" "$ROOT/content/quotes.html"
 
@@ -50,6 +51,7 @@ cp "$ROOT/publications.js" "$OUT/publications.js"
 cp "$ROOT/theme.js" "$OUT/theme.js"
 cp "$ROOT/google38e3ebfc27d4fac7.html" "$OUT/google38e3ebfc27d4fac7.html"
 cp "$ROOT/content/photos.html" "$OUT/photos.html"
+cp "$ROOT/quotes.js" "$OUT/quotes.js"
 
 if [[ -d "$ROOT/images" ]]; then
     cp -R "$ROOT/images" "$OUT/images"
